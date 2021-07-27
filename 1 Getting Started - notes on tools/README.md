@@ -2,4 +2,9 @@
 
 This folder is where we can put how to info on getting tools installed or how to use them.
 
-For example: Why and how to install VSCODE with notes for Mac/PC/Linuxs users
+If you are starting fresh or new to all thise stuff I suggest the following:
+
+--Install VSCODE - this makes developing everything easier from firmware coding to AI experimenting.
+
+
+

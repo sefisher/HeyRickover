@@ -18,7 +18,7 @@ This project is certainly feasible – here is a video tutorial of something tha
 
 **Learning Goals/Topics:** Home Automation Platforms, Artificial Intelligence (trigger word detection and natural language understanding), Software Development and Programming, Communication Protocols, Control System and Network Security, Lightweight Processors and “Internet of Things (IoT)”, Printer Circuit Board design and Manufacturing, Audio Processing, 3D printing and Computer Aided Design for Additive Manufacturing, Open Source Applications, Developing Tutorials and Video Content.
 
-**Specific Project Goals:**
+# Specific Project Goals:
 
 *--Cost:* Targeting <$15 to make each device (case, parts, etc); minimize the labor to assemble and program – but labor costs can be excluded.  Stretch goal: Include AC-DC power conversion hardware in cost (otherwise rely on a USB adapter being provided).
 
@@ -30,13 +30,14 @@ This project is certainly feasible – here is a video tutorial of something tha
 
 *--System Output:* A server (Raspberry Pi, virtual machine, etc) should determine the intent (Natural Language Understanding (NLU)) and translate natural speech into machine executable commands. Stretch Goal:  Do NLU on the device itself.
 
-**Project Areas and Phases:**  You don’t need to know it all or do it all.  The project will need people to work in small teams (and team leaders) to explore and then deliver in different areas.  The following are expected project areas and stages of development.  You are free to jump in or out and contribute however best suits you.
+# Project Areas and Phases:
+**You don’t need to know it all or do it all.  The project will need people to work in small teams (and team leaders) to explore and then deliver in different areas.  The following are expected project areas and stages of development.  You are free to jump in or out and contribute however best suits you.**
 
 ![Image of project phases and areas](project-areas.png "Image of project phases and areas").
 
 # Topics for Early Exploration and Likely Tasks in Project Areas:
 
-Electronic Design/Manufacturing:  
+**Electronic Design/Manufacturing:** 
 
 --Microprocessor Selection – choosing the core platform based on cost/capability/reliability/power-consumption (e.g., Pi-Zero, ESP32, etc).
 
@@ -44,7 +45,7 @@ Electronic Design/Manufacturing:
 
 --Select PCB design tools
 
-Power:
+**Power:**
 
 --Should we assume user provided wall-adapters (impacts case design – need to hang off of USB; impacts efficiency and product value)?
 
@@ -52,7 +53,7 @@ Power:
 
 --Measure efficiency and power consumption – what are reasonable design goals for designing power conversion into device (cost, efficiency, etc)?
 
-Audio:
+**Audio:**
 
 --Microphone selection – I2S output from a MEMs mic seems like the best option – but are there other choices? Integrated board or just the mic in our own custom circuit?
 
@@ -68,7 +69,7 @@ Trigger Word Detection and Voice to Text Capture:
 
 --Developing work flow and nodal network to allow high accuracy custom trigger-word detection.
 
-Natural Language Understanding (NLU):
+**Natural Language Understanding (NLU):**
 
 --Investigate options for NLU AI-frameworks to convert transcribed human sentences to intended actions (e.g., Wit.ai, RASA, Snips, Almond, etc).
 
@@ -82,7 +83,7 @@ Software Development and App Integration:
 
 --Identify best practices for coding and coordinate development language choice for various system sections.
 
-Packaging Design:
+**Packaging Design:**
 
 --Select CAD design tools for 3D printed prototyping and design collaboration (e.g., tinkercad.com, fusion 360).
 
@@ -92,7 +93,7 @@ Packaging Design:
 
 --Explore options for injection molding and manufacturing final product vs posting 3D model for DIY manufacturing with 3D printers.
 
-Security:
+**Security:**
 
 --Explore vulnerabilities in fundamental design.
 
@@ -100,7 +101,7 @@ Security:
 
 --Explore vulnerabilities in design process and our “vendor base”.
 
-Documenting and Publishing:
+**Documenting and Publishing:**
 
 --Plan out how to publish tutorials and share lessons learned across all areas.
 
@@ -110,7 +111,7 @@ Documenting and Publishing:
 
 --Provide input on any “branding” logos, etc.
 
-Home Automation Integration:
+**Home Automation Integration:**
 
 --Develop the baseline “use case” to share as an example.
 
