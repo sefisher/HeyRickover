@@ -1,10 +1,10 @@
-**HEY RICKOVER PROJECT GIT**
+# HEY RICKOVER PROJECT GIT
 
 The is the git repository for the Hey Rickover Project.
 
-**Initial Project Overview:**
+# Initial Project Overview:
 
-Inviting you and anyone interested to join a project team and contribute to a fun development project called “Hey Rickover”.  Summary of the why/what is below. If you have questions or would like to join send me a note.  After this initial invite all communications will be done in a Slack workspace that we’ll set up for team communications and collaboration – so please tell me if you want to be invited to our Slack Workspace. (For those of you who have already told me you want to join please send me an email address to use for Slack if you haven’t already done so.) Joining us in Slack doesn’t commit you to do anything – but we’ll probably end up using that space/app for future projects as well – so I encourage you to come check it out.  We’ll have various channels setup for the different aspects of development. You can also contact me via personal email: stephen.e.fisher@gmail.com.  This is intended to be a fun at home project with most of the work done after hours.
+Inviting you and anyone interested to join a project team and contribute to a fun development project called “Hey Rickover”.  Summary of the why/what is below. If you have questions or would like to join send me a note.  After this initial invite all communications will be done in a Slack workspace that we’ll set up for team communications and collaboration – so please tell me if you want to be invited to our Slack Workspace. (For those of you who have already told me you want to join please send me an email address to use for Slack if you haven’t already done so.) Joining us in Slack doesn’t commit you to do anything – but we’ll probably end up using that space/app for future projects as well – so I encourage you to come check it out.  We’ll have various channels setup for the different aspects of development. You can also contact me via personal email.  This is intended to be a fun at home project with most of the work done after hours.
 
 This project is certainly feasible – here is a video tutorial of something that is almost exactly what we are looking for.  Maybe we don’t need a speaker; we certainly need a cool package and PCB; and we would prefer to not use Wit.ai as an interpreter to keep our home automation out of the cloud – but who knows.  Anyway we’ve got a lot of stuff in the DIY space to start from and can focus on optimizing our design and making it fit our specific needs and then packaging the results just in time for holiday shopping (what a great gift idea!!).   
 
@@ -34,7 +34,7 @@ This project is certainly feasible – here is a video tutorial of something tha
 
 ![Image of project phases and areas](project-areas.png "Image of project phases and areas").
 
-Topics for Early Exploration and Likely Tasks in Project Areas:
+# Topics for Early Exploration and Likely Tasks in Project Areas:
 
 Electronic Design/Manufacturing:  
 
@@ -117,4 +117,3 @@ Home Automation Integration:
 --Work across the team to help integrate the device into different home-automation environments.
 
 --Provide support, capture best practices, and feedback improvement needs for product design to make it easier to use and more flexible.
-
