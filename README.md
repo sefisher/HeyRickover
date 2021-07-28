@@ -1,6 +1,6 @@
 # HEY RICKOVER PROJECT GIT
 
-The is the git repository for the Hey Rickover Project.
+The is the git repository for the Hey Rickover Project. This is a work in progress to explore Atomic14's awesome DIY Alexa example and look for ways to remove cloud/internet dependency further (e.g., eliminate Wit.ai) and play with developing harware to make a custom low cost device. Below is the initial project announcement/invitation. The code files above are structured top split the work into different areas of interest (aligned to the project sections described below). Each folder should have a README.md file to help people get started from "bare metal" and learn about that part of the project.  
 
 # Initial Project Overview:
 
