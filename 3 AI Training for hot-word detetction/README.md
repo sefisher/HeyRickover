@@ -2,7 +2,9 @@
 
 This is where to store info on working with AI for hot-word detection.
 
-*The following is modified from Atomic-14's tutorial:*
+*The following is modified from Atomic-14's tutorial.  
+
+**Note that gthe sound files from section 2 of the project are copied into the speech_data folder in the new words own folder (e.g., speech_data/rickover/).  Then the training Jupyter file is modified to see that word as the correct and all the other words as incorrect when training.**
 
 # DIY Alexa Wake Word Detection
 
