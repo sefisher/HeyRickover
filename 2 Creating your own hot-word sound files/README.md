@@ -1,16 +1,25 @@
 **WORKING ON GENERAL SOUNDS FILES FOR TRAINING OUR AI**
 
-This is where to keep files, info, etc for working on generating shot sound files that fit into the pattern of the SPEECH_DATA files used to train the neural network.
-Notes on woking on sounds:
+This section of the project is centered on making lots of single word sound clips (under 1 second in duration; e.g., "Rickover").  These files conform to the SPEECH_DATA data set provided by Google (the same set used in the DIY Alexa project). These are then used in training the tensorflow model to create a tigger-word (hot-word) detector.
 
-I've been working in Ubuntu under WSL2 (linuix sublayer in windows).  
-In my ubuntu layer I install all the softwaer dependencies for python, pyAudioAnalysis, ffmpeg, etc.
+The files in this folder do three things:
+1) "makeRickover.py" is a python script that makes command line calls to AWS Polly to request all their english speaking voices to say the word provided with a variety of speeds and pitches. (Saved as single word MP3s).
+2) "convertAudio.sh" is a bash file that does two things:
+  a) Takes an iOS Voice Recorder files with your personally recorded voice saying the trigger word over and over (with a pause between), and chops them up into mp3s. 
+  b) It then takes all the single word mp3s and convergts them to files matching SOUND_DATA format. It also moves the start time around within the 1 second randomly to avoid overfitting the AI to a specific start time in the sample.
 
-TO RUN AWS POLLY (text to speech engine) FROM THE COMMAND LINE:
-AMAZON POLLY FROM COMMAND LINE TUTORIAL
+#My Dev Environment
+-I've been working in Ubuntu under WSL2 (linuix sublayer in windows).  I assume any linux environment can follow this if you don't have a windows machines that is set up to run Ubnutu on WSL (e.g., mac or raspberry pi, etc).
+-In my ubuntu layer I install all the software dependencies for python, pyAudioAnalysis, ffmpeg, etc (see below).
+
+#Notes on installing supporting software:
+**TO RUN AWS POLLY (text to speech engine) FROM THE COMMAND LINE:**
+
+Follow the Amazon Polly Command Line Tutorial below, with a few modifications for Windows WSL.
 
 ==INSTALL==
 https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html
+
 -For me these commands worked: 
 --curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 --unzip awscliv2.zip
@@ -28,14 +37,14 @@ my_aws_id_for_polly
 my_aws_secret_key_for_polly
 
 ==RUNNING==
-(Notes for Steve's Pc)
-Open an ubuntu terminal.
+(Notes for my Pc)
+Open an Ubuntu terminal.
 cd ai (will take you to /mnt/e/AI-fishyDIYProjects)
 cd sounds
 
 ==COMMANDS==
 "aws polly describe-voices > voices.json"     --> this will use AWS polly to get a list of voices 
-                                         (makeRickover.py will filter to those that do english)
+                                         (makeRickover.py will filter these voices down to those that speak English)
 
 "py makeRickover.py"                          --> this will use AWS polly via CLI to generate the word
 					 "rickover" said with ever voice 7 times with random pitch, speed, and volume.
