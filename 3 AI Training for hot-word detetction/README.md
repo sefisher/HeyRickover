@@ -25,7 +25,7 @@ You will need python3 installed - follow the instructions for your platform to g
 
 >pip install -r requirements.txt
 
-### ---Install on Windows Running Ubuntu---
+### ---Install on Windows (in powershell)---
 
 (I originally got errors associated with pyaudio so I first added pipwin and then used pipwin like this:)
 
@@ -39,7 +39,7 @@ You will need python3 installed - follow the instructions for your platform to g
 
 >jupyter notebook .
 
-### ---Running the notebooks on Windows Running Ubuntu---
+### ---Running the notebooks on Windows (in powershell)---
 
 >python -m venv venv
 
