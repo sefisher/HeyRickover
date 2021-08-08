@@ -33,6 +33,14 @@ You will need python3 installed - follow the instructions for your platform to g
 
 >pipwin install pyaudio
 
+## Once pyaudio is installed you're ready to run.
+
+### ---Running the notebooks inside VSCODE (preferred)---
+
+>Just right click on the test.py file and select "Run Current File in interactive window."
+
+**The following methods run in "venv" (a virtual environment created as a sub-folder and run a webserver that allows interacting with tensorflow)**
+
 ### ---Running the notebooks on normal Linux---
 
 >. ./venv/bin/activate
