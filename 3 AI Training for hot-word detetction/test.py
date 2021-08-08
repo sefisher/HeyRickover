@@ -66,7 +66,7 @@ def callback(input_data, frame_count, time_info, flags):
 
 
 stream = audio.open(
-    input_device_index=0,
+    input_device_index=2,
     format=FORMAT,
     channels=CHANNELS,
     rate=RATE,

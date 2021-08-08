@@ -17,18 +17,28 @@ This folder contains the Jupyter notebooks for creating the training data, train
 
 You will need python3 installed - follow the instructions for your platform to get this set up and then create a virtual environment.
 
-```
-python3 -m venv venv
-. ./venv/bin/activate
-pip install -r requirements.txt
-```
+### ---Install on normal Linux---
 
-## Running the notebooks
+>python3 -m venv venv
+>. ./venv/bin/activate
+>pip install -r requirements.txt
 
-```
-. ./venv/bin/activate
-jupyter notebook .
-```
+### ---Install on Windows Running Ubuntu---
+
+(I originally got errors associated with pyaudio so I first added pipwin and then used pipwin like this:)
+>pip install pipwin
+>pipwin install pyaudio
+
+### ---Running the notebooks on normal Linux---
+
+>. ./venv/bin/activate
+>jupyter notebook .
+
+### ---Running the notebooks on Windows Running Ubuntu---
+
+>python -m venv venv
+>./venv/Scripts/activate
+>pip install -r requirements.txt
 
 # The notebooks
 
