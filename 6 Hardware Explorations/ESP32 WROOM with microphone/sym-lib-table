@@ -1,7 +1,0 @@
-(sym_lib_table
-  (lib (name HeyRickover_Symbol)(type Legacy)(uri ${KIPRJMOD}/HeyRickover_Symbol.lib)(options "")(descr ""))
-  (lib (name 47346-0001)(type Legacy)(uri "${KIPRJMOD}/Library/MicroUSB MOLEX_47346-0001/47346-0001.lib")(options "")(descr ""))
-  (lib (name 5-1437565-0)(type Legacy)(uri "${KIPRJMOD}/Library/Pushbutton 5-1437565-0/5-1437565-0.lib")(options "")(descr ""))
-  (lib (name SSW-105-X-X-S-002)(type Legacy)(uri ${KIPRJMOD}/Library/SamTechHeader/SSW-105-X-X-S-002.lib)(options "")(descr ""))
-  (lib (name SSW-105-01-TM-S)(type Legacy)(uri ${KIPRJMOD}/Library/SamTechHeader/SSW-105-01-TM-S.lib)(options "")(descr ""))
-)
