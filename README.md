@@ -1,12 +1,12 @@
 # HEY RICKOVER PROJECT GIT
 
-The is the git repository for the Hey Rickover Project.
+The is the git repository for the Hey Rickover Project. This is a work in progress to explore [Atomic14's awesome DIY Alexa example](https://github.com/atomic14/diy-alexa) and look for ways to remove cloud/internet dependency further (e.g., eliminate Wit.ai) and play with developing harware to make a custom low cost device. Below is the initial project announcement/invitation. The code files above are structured top split the work into different areas of interest (aligned to the project sections described below). Each folder should have a README.md file to help people get started from "bare metal" and learn about that part of the project.  
 
 # Initial Project Overview:
 
 Inviting you and anyone interested to join a project team and contribute to a fun development project called “Hey Rickover”.  Summary of the why/what is below. If you have questions or would like to join send me a note.  After this initial invite all communications will be done in a Slack workspace that we’ll set up for team communications and collaboration – so please tell me if you want to be invited to our Slack Workspace. (For those of you who have already told me you want to join please send me an email address to use for Slack if you haven’t already done so.) Joining us in Slack doesn’t commit you to do anything – but we’ll probably end up using that space/app for future projects as well – so I encourage you to come check it out.  We’ll have various channels setup for the different aspects of development. You can also contact me via personal email.  This is intended to be a fun at home project with most of the work done after hours.
 
-This project is certainly feasible – here is a video tutorial of something that is almost exactly what we are looking for.  Maybe we don’t need a speaker; we certainly need a cool package and PCB; and we would prefer to not use Wit.ai as an interpreter to keep our home automation out of the cloud – but who knows.  Anyway we’ve got a lot of stuff in the DIY space to start from and can focus on optimizing our design and making it fit our specific needs and then packaging the results just in time for holiday shopping (what a great gift idea!!).   
+This project is certainly feasible – [here is a video tutorial of something that is almost exactly what we are looking for](https://github.com/atomic14/diy-alexa).  Maybe we don’t need a speaker; we certainly need a cool package and PCB; and we would prefer to not use Wit.ai as an interpreter to keep our home automation out of the cloud – but who knows.  Anyway we’ve got a lot of stuff in the DIY space to start from and can focus on optimizing our design and making it fit our specific needs and then packaging the results just in time for holiday shopping (what a great gift idea!!).   
 
 **Baseline Tutorial:** https://www.youtube.com/watch?v=re-dSV_a0tM
 
