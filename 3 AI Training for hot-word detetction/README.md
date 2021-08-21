@@ -2,7 +2,9 @@
 
 This is where to store info on working with AI for hot-word detection.
 
-*The following is modified from Atomic-14's tutorial:*
+*The following is modified from Atomic-14's tutorial.  
+
+**Note that gthe sound files from section 2 of the project are copied into the speech_data folder in the new words own folder (e.g., speech_data/rickover/).  Then the training Jupyter file is modified to see that word as the correct and all the other words as incorrect when training.**
 
 # DIY Alexa Wake Word Detection
 
@@ -15,18 +17,43 @@ This folder contains the Jupyter notebooks for creating the training data, train
 
 You will need python3 installed - follow the instructions for your platform to get this set up and then create a virtual environment.
 
-```
-python3 -m venv venv
-. ./venv/bin/activate
-pip install -r requirements.txt
-```
+### ---Install on normal Linux---
 
-## Running the notebooks
+>python3 -m venv venv
 
-```
-. ./venv/bin/activate
-jupyter notebook .
-```
+>. ./venv/bin/activate
+
+>pip install -r requirements.txt
+
+### ---Install on Windows (in powershell)---
+
+(I originally got errors associated with pyaudio so I first added pipwin and then used pipwin like this:)
+
+>pip install pipwin
+
+>pipwin install pyaudio
+
+## Once pyaudio is installed you're ready to run.
+
+### ---Running the notebooks inside VSCODE (preferred)---
+
+>Just right click on the test.py file and select "Run Current File in interactive window."
+
+**The following methods run in "venv" (a virtual environment created as a sub-folder and run a webserver that allows interacting with tensorflow)**
+
+### ---Running the notebooks on normal Linux---
+
+>. ./venv/bin/activate
+
+>jupyter notebook .
+
+### ---Running the notebooks on Windows (in powershell)---
+
+>python -m venv venv
+
+>./venv/Scripts/activate
+
+>pip install -r requirements.txt
 
 # The notebooks
 
@@ -51,7 +78,7 @@ You can remove this from the training data if you don't have this available.
 
 The notebook will run through all these samples and output files for the training step. You will need about 4GB of free space to save these files.
 
-## Tain Model.ipynb
+## Train Model.ipynb
 
 This will train a model against the training data. This will train on a CPU in 1-2 hours. If you have a suitable GPU this training will be considerably faster.
 
