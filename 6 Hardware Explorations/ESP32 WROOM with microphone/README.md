@@ -19,38 +19,38 @@ Board design from 8-21-21 requires some modifications to make it work.
 ![Image of front side cut](FrontSideCut.png.png "Front Side Cut")
 ![Image of back side cuts](BackSideCuts.png "Back Side Cuts")
 ![Image of front side jumpers](JumperAdds.png "Front Side Jumpers")
+<br>
+Once these modifications are made, the following pins will be used:<br>
+SW2 (button just above SD card interface) - GPIO19<br>
 
-Once these modifications are made, the following pins will be used:
-SW2 (button just above SD card interface) - GPIO19
+SD Card<br>
 
-SD Card
-
->  PIN_NUM_MISO GPIO_NUM_16
->  PIN_NUM_CLK GPIO_NUM_14
->  PIN_NUM_MOSI GPIO_NUM_17
->  PIN_NUM_CS GPIO_NUM_13
+>  PIN_NUM_MISO GPIO_NUM_16<br>
+>  PIN_NUM_CLK GPIO_NUM_14<br>
+>  PIN_NUM_MOSI GPIO_NUM_17<br>
+>  PIN_NUM_CS GPIO_NUM_13<br>
 	
-Microphone
+Microphone<br>
 
->  I2S_MIC_CHANNEL I2S_CHANNEL_FMT_ONLY_RIGHT
->  I2S_MIC_SERIAL_CLOCK GPIO_NUM_26
->  I2S_MIC_LEFT_RIGHT_CLOCK GPIO_NUM_25
->  I2S_MIC_SERIAL_DATA GPIO_NUM_27
+>  I2S_MIC_CHANNEL I2S_CHANNEL_FMT_ONLY_RIGHT<br>
+>  I2S_MIC_SERIAL_CLOCK GPIO_NUM_26<br>
+>  I2S_MIC_LEFT_RIGHT_CLOCK GPIO_NUM_25<br>
+>  I2S_MIC_SERIAL_DATA GPIO_NUM_27<br>
 
-Also for microphone, you will need the following settings:
+Also for microphone, you will need the following settings:<br>
 
->i2s_config_t i2s_mic_Config = {
->    .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX | I2S_MODE_PDM),
->    .sample_rate = SAMPLE_RATE,
->    .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT,
->    .channel_format = I2S_MIC_CHANNEL, 
->    .communication_format = i2s_comm_format_t(I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_MSB), 
->    .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
->    .dma_buf_count = 4,
->    .dma_buf_len = 1024,
->    .use_apll = false,
->    .tx_desc_auto_clear = false,
->    .fixed_mclk = 0};
+>i2s_config_t i2s_mic_Config = {<br>
+>    .mode = (i2s_mode_t)(I2S_MODE_MASTER | I2S_MODE_RX | I2S_MODE_PDM),<br>
+>    .sample_rate = SAMPLE_RATE,<br>
+>    .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT,<br>
+>    .channel_format = I2S_MIC_CHANNEL,<br>
+>    .communication_format = i2s_comm_format_t(I2S_COMM_FORMAT_I2S | I2S_COMM_FORMAT_I2S_MSB),<br>
+>    .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,<br>
+>    .dma_buf_count = 4,<br>
+>    .dma_buf_len = 1024,<br>
+>    .use_apll = false,<br>
+>    .tx_desc_auto_clear = false,<br>
+>    .fixed_mclk = 0};<br>
 
 
 
