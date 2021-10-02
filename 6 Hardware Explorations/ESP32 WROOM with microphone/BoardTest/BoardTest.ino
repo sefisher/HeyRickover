@@ -9,22 +9,23 @@ const int freq = 256;
 const int buzzerChannel = 0;
 const int resolution = 8;
 
-boolean ledState = false;
+boolean buzzerState = false;
 
 void IRAM_ATTR buttonChange() {
-  if (ledState == false) {
+  if (buzzerState == false) {
     // turn LED on
-    digitalWrite(LED_BUILTIN, HIGH);
-    ledState=true;
+    ledcWrite(buzzerChannel, 20);
+    buzzerState=true;
   } else {
     // turn LED off
-    digitalWrite(LED_BUILTIN, LOW);
-    ledState=false;
+    ledcWrite(buzzerChannel, 0);
+    buzzerState=false;
   }
 }
 
 // the setup function runs once when you press reset or power the board
 void setup() {
+  Serial.begin(115200);
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(buttonPin, INPUT_PULLUP);
@@ -37,8 +38,10 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  ledcWrite(buzzerChannel, 20);
+  Serial.println(digitalRead(buttonPin));
+  digitalWrite(LED_BUILTIN, HIGH);
   delay(1000);                       // wait for a second
-  ledcWrite(buzzerChannel, 0);
+  Serial.println(digitalRead(buttonPin));
+  digitalWrite(LED_BUILTIN, LOW);
   delay(1000);                       // wait for a second
 }
